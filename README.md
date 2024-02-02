@@ -1,18 +1,17 @@
-# sinatra-template
+Sinatra Music Recommendation App 🎵
 
-Use this repository to create new Sinatra apps. 
+This Sinatra app recommends personalized playlists based on your music preferences using the Spotify API.
 
-Optionally, to use `ActiveRecord` for database operations, add to the `app.rb`:
+Features:
 
-```ruby
-require "sinatra/activerecord"
-```
+Customizable recommendations by genre, energy, instrumentalness, and danceability.
+Integrates with Spotify for access to a vast music catalog.
 
-And in the `config/environment.rb` file add this code block:
+Usage:
 
-```ruby
-configure do
-  # setup a database connection
-  set(:database, { adapter: "sqlite3", database: "db/development.sqlite3" })
-end
-```
+Fill out the music preferences form:
+Genre (e.g., rock)
+Energy (number between 0 and 1)
+Instrumentalness (number between 0 and 1)
+Danceability (number between 0 and 1)
+Click "Submit" to get your personalized playlist recommendation.
