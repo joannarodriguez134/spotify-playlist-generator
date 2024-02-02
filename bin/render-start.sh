@@ -5,7 +5,7 @@ set -o errexit
 # Uncomment the line depending on the framework you are deploying
 
 # Sinatra
-bundle exec puma
+bundle exec rackup
 
 # Ruby on Rails
 # bundle exec puma -C config/puma.rb
