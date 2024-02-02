@@ -26,4 +26,6 @@ get("/search_results") do
   cookies["search_energy"] = @initial_energy
   cookies["search_instrumentals"] = @initial_instrumentalness
   cookies["search_dance"] = @initial_danceability
+
+  erb(:user_search_results)
 end

@@ -1,7 +1,35 @@
-<h1> Good taste! Here is what you are interested. </h1>
+<h1> Good taste! Here is what you said you are interested in. </h1>
 
-<%= cookies %>
 
+<dl>
+  <dt> Genre </dt>
+  <% if !cookies["search_genre"].empty? %>
+    <dd> <%= cookies["search_genre"] %> </dd>
+  <% else %>
+    <dd> None provided </dd>
+  <% end %>
+
+  <dt> Energy </dt>
+  <% if !cookies["search_energy"].empty? %>
+    <dd>  <%= cookies["search_energy"] %> </dd>
+  <% else %>
+    <dd> None provided </dd>
+  <% end %>
+
+    <dt> Instrumentals </dt>
+    <% if !cookies["search_instrumentals"].empty?%>
+      <dd> <%= cookies["search_instrumentals"] %> </dd>
+    <% else %>
+      <dd> None provided </dd>
+    <% end %>
+
+    <dt> Danceability </dt>
+    <% if !cookies["search_dance"].empty? %>
+      <dd> <%= cookies["search_dance"] %> </dd>
+    <% else %>
+      <dd> None provided </dd>
+    <% end %>
+</dl>
 
 
 <h1> Here is your personalized playlist! Enjoy! </h1>
