@@ -1,0 +1,19 @@
+body {
+  background-color: rgba(88, 84, 84, 0.856);
+  color: rgb(115, 172, 129);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* The animation code */
+@keyframes example {
+  from {background-color: rgb(128, 120, 120);}
+  to {background-color: rgb(19, 19, 18);}
+}
+
+/* The element to apply the animation to */
+h1 {
+  max-width:100%;
+  background-color: rgb(19, 19, 18);
+  animation-name: example;
+  animation-duration: 4s;
+}
