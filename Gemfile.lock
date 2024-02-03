@@ -97,6 +97,8 @@ GEM
     net-http (0.4.1)
       uri
     nio4r (2.7.0)
+    nokogiri (1.16.0-x86_64-darwin)
+      racc (~> 1.4)
     nokogiri (1.16.0-x86_64-linux)
       racc (~> 1.4)
     octokit (5.6.1)
@@ -165,6 +167,7 @@ GEM
       rack-protection (= 4.0.0)
       sinatra (= 4.0.0)
       tilt (~> 2.0)
+    sqlite3 (1.7.2-x86_64-darwin)
     sqlite3 (1.7.2-x86_64-linux)
     table_print (1.5.7)
     tabulo (3.0.1)
@@ -191,6 +194,7 @@ GEM
       nokogiri (~> 1.8)
 
 PLATFORMS
+  x86_64-darwin-22
   x86_64-linux
 
 DEPENDENCIES
@@ -203,7 +207,7 @@ DEPENDENCIES
   http
   i18n
   pry
-  puma (~> 6.0)
+  puma
   rackup
   rspec
   rspec-html-matchers
