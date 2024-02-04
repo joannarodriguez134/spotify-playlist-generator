@@ -15,5 +15,19 @@ h1 {
   max-width:100%;
   background-color: rgb(19, 19, 18);
   animation-name: example;
-  animation-duration: 4s;
+  animation-duration: 5s;
+}
+#instructions {
+  background-color: rgb(182, 182, 182);
+  display: grid;
+  row-gap: 2px;
+  text-align: center;
+}
+#searchForm {
+  display: grid;
+}
+#buttonSubmit {
+  background-color: black;
+  color: white;
+  gap: 50px;
 }

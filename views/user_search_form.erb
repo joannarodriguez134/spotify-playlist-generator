@@ -1,30 +1,32 @@
-<h1> Get a playlist recomendation! </h1>
 
-<p> Start by adding what you are already interested in. </p>
+<div id="instructions">
+  <h1> Get a playlist recomendation! </h1>
 
-<p> You can decide whether to complete all of the fields or leave some blank. </p>
+  <p> Start by adding what you are already interested in. </p>
 
-</p> Once you're done click submit to get your personalized playlist. </p>
+  <p> You can decide whether to complete all of the fields or leave some blank. </p>
 
-<p> Note that if you leave any or the <b>genre</b> field blank, your playlist will be generated based off Rock music. </p>
+  </p> Once you're done click submit to get your personalized playlist. </p>
 
+  <p> Note that if you leave any or the <b>genre</b> field blank, your playlist will be generated based off Rock music. </p>
 
-<form action="/search_results">
-  <label for="user_genre"> Genre (eg. rock)</label>
+</div>
+<form action="/search_results" id="searchForm">
+  <label for="user_genre"> <b>Genre</b> (eg. rock)</label>
   <input id="user_genre" type="text" name="genre">
 
 
-  <label for="user_energy"> Energy (number between 0 and 1)</label>
+  <label for="user_energy"> <b>Energy</b> (number between 0 and 1)</label>
   <input id="user_energy" type="text" name="target_energy">
 
-  <label for="user_instrumentalness"> Instrumentals (number between 0 and 1)</label>
+  <label for="user_instrumentalness"> <b>Instrumentals</b> (number between 0 and 1)</label>
   <input id="user_instrumentalness" type="text" name="target_instrumentalness">
 
-  <label for="user_dance"> Danceability (number between 0 and 1)</label>
+  <label for="user_dance"> <b>Danceability</b> (number between 0 and 1)</label>
   <input id="user_dance" type="text" name="target_danceability">
 
-  <button> Submit </button>
+  <button id="buttonSubmit"> Submit </button>
 
 </form>
 
-<img src="/Spotifyimage.webp" alt="Italian Trulli" style="width:300px;height:300px;">
+<img src="/Spotifyimage.webp" alt="Spotify character image." style="width:300px;height:300px;">

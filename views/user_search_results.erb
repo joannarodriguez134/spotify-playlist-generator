@@ -3,28 +3,28 @@
 
 
 <dl>
-  <dt> Genre </dt>
+  <dt> <b>Genre</b> </dt>
   <% if !cookies["search_genre"].empty? %>
     <dd> <%= cookies["search_genre"] %> </dd>
   <% else %>
     <dd> None provided </dd>
   <% end %>
 
-  <dt> Energy </dt>
+  <dt> <b>Energy</b> </dt>
   <% if !cookies["search_energy"].empty? %>
     <dd>  <%= cookies["search_energy"] %> </dd>
   <% else %>
     <dd> None provided </dd>
   <% end %>
 
-    <dt> Instrumentals </dt>
+    <dt> <b>Instrumentals</b> </dt>
     <% if !cookies["search_instrumentals"].empty?%>
       <dd> <%= cookies["search_instrumentals"] %> </dd>
     <% else %>
       <dd> None provided </dd>
     <% end %>
 
-    <dt> Danceability </dt>
+    <dt> <b>Danceability</b> </dt>
     <% if !cookies["search_dance"].empty? %>
       <dd> <%= cookies["search_dance"] %> </dd>
     <% else %>
@@ -36,9 +36,9 @@
 <h1> Here is your personalized playlist! Enjoy! </h1>
 
 <ol>
-  <li><%= @artist_one_song_name%> by <%= @artist_one_name %></li>
+  <li><b><%= @artist_one_song_name%></b> by <%= @artist_one_name %></li>
 
-  <li><%= @artist_two_song_name%> by <%= @artist_two_name %></li>
+  <li><b><%= @artist_two_song_name%></b> by <%= @artist_two_name %></li>
 
-  <li><%= @artist_three_song_name%> by <%= @artist_three_name %></li>
+  <li><b><%= @artist_three_song_name%></b> by <%= @artist_three_name %></li>
 </ol>
