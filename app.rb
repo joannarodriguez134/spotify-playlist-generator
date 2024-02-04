@@ -15,7 +15,7 @@ end
 
 get("/search_results") do
   # using the names from the input to create instance variables 
-  @initial_genre = params.fetch("genre", "rock") # Default value is "rock" if no genre provided because it allows the url to be built upon that
+  @initial_genre = params.fetch("genre", "rock").downcase # Default value is "rock" if no genre provided because it allows the url to be built upon that
   @initial_energy = params.fetch("target_energy")
   @initial_instrumentalness = params.fetch("target_instrumentalness")
   @initial_danceability = params.fetch("target_danceability")
